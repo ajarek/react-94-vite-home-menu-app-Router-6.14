@@ -1,0 +1,12 @@
+.main-layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--black);
+  background-image: url('/images/blat1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
