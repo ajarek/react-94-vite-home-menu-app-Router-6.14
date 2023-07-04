@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--black);
   background-image: url('/images/blat1.jpg');
   background-position: center;
   background-size: cover;

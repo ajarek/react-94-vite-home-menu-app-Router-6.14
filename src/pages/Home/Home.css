@@ -1,0 +1,40 @@
+.home{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 70px ;
+  border: solid;
+}
+.home h1{
+  color: var(--white);
+}
+.home .cards{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.home .header{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+  background-color: transparent;
+}
+.home .wrapper-card-header{
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(7 ,100px);
+  place-self: start;
+  gap: 10px ;
+  margin-left:110px ;
+}
