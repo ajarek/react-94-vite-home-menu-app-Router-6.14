@@ -5,12 +5,12 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  justify-content: space-evenly;
 }
 
 .form label {
   color: var(--white);
+  margin: 8px 0;
 }
 .select, textarea{
   width: 100%;

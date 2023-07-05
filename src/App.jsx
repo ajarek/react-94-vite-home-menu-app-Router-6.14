@@ -30,7 +30,7 @@ const router = createBrowserRouter([
 function App() {
   const [breakfasts,setBreakfasts]=useState(['zupa mleczna','jajka z majonezem',' kanapki z serem','zupa mleczna','parówki','jajecznica','zupa mleczna'])
   const [lunches,setLunches]=useState(['stek wieprzowy w sosie','spaghetti bolognese',' naleśniki z serem','zupa pomiod.','pulpety w sosie pomid.','grilowany filet w sosie śmiet.','panierowany filet drobiowy, frytki '])
-  const [dinners,setDinners]=useState(['kanapki z wędliną i serem, kiełbaski','kanapki z wędliną i serem, parówki',' kanapki z serem','kanapki z wędliną i serem, białe kiełbaski ','kanapki z wędliną i serem, parówki','burgery ','kanapki z wędliną i serem, parówki'])
+  const [dinners,setDinners]=useState(['kanapki z wędliną i serem, kiełbaski','kanapki z wędliną i serem, parówki',' kanapki z serem','kanapki z wędliną i serem, białe kiełbaski ','kanapki z wędliną i serem, parówki','burgery wołowe z pomidorem , ogórkiem i sosem ','kanapki z wędliną i serem, parówki'])
   return (
     <div className='App'>
       <AppContext.Provider
