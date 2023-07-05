@@ -8,17 +8,25 @@ const Nav = () => {
     <>
       <nav className='nav'>
         <div className='logo'>
-          <Link
+          <h1>👨‍🍳</h1>
+         
+        </div>
+
+        <ul className='wrapper'>
+        <Link
             className='link'
             to={'/'}
           >
            
             <h1>Menu</h1>
           </Link>
-        </div>
-
-        <ul className='wrapper'>
-         
+        <Link
+            className='link'
+            to={'/menu-edit'}
+          >
+           
+            <h1>Ułóż Menu</h1>
+          </Link>
         </ul>
         
       </nav>

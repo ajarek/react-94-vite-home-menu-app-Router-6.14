@@ -18,9 +18,9 @@
   padding: 5px;
   text-transform:capitalize ;
   font-style:italic ;
-  overflow-y: auto;
-  overflow-x: hidden;
   font-family: 'Courgette', cursive;
+  overflow-wrap: break-word;
+  overflow: hidden;
 }
 .wrapper-card-meal .meal{
   display: flex;

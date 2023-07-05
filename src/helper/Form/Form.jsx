@@ -6,8 +6,9 @@ import './Form.css'
 import { useEffect } from 'react'
 export const Form = ({ onSubmit }) => {
   const schema = yup.object().shape({
-    platform: yup.string().required(),
-    link: yup.string().required(),
+    dey: yup.string().required(),
+    meal: yup.string().required(),
+    text: yup.string().min(3).max(35).required(),
   })
 
   const {
@@ -23,8 +24,9 @@ export const Form = ({ onSubmit }) => {
   useEffect(() => {
     if (formState.isSubmitSuccessful) {
       reset({
-        //  platform: '',
-        link: '',
+        // dey: '',
+        // meal: '',
+        text:''
       })
     }
   }, [formState, reset])
@@ -35,35 +37,49 @@ export const Form = ({ onSubmit }) => {
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className='wrapper-input'>
-        <label htmlFor='email'>Platform</label>
+        <label htmlFor='email'>Dzień Tygodnia</label>
         <select
-          {...register('platform')}
+          {...register('dey')}
           className='select'
         >
-          <option value='GitHub'>GitHub</option>
-          <option value='YouTube'>YouTube</option>
-          <option value='LinkedIn'>LinkedIn</option>
-          <option value='Facebook'>Facebook</option>
-          <option value='Twitter'>Twitter</option>
-          <option value='Instagram'>Instagram</option>
+          <option value='Poniedziałek'>Poniedziałek</option>
+          <option value='Wtorek'>Wtorek</option>
+          <option value='Środa'>Środa</option>
+          <option value='Czwartek'>Czwartek</option>
+          <option value='Piątek'>Piątek</option>
+          <option value='Sobota'>Sobota</option>
+          <option value='Niedziela'>Niedziela</option>
         </select>
-        <p>{errors?.platform?.message}</p>
+        <p>{errors?.dey?.message}</p>
       </div>
-
+       
       <div className='wrapper-input'>
-        <label htmlFor='email'>Link</label>
-        <input
-          type='text'
-          placeholder='https://github.com/'
-          {...register('link')}
+        <label htmlFor='email'>Posiłek</label>
+        <select
+          {...register('meal')}
+          className='select'
+        >
+          <option value='Śniadanie'>Śniadanie</option>
+          <option value='Obiad'>Obiad</option>
+          <option value='Kolacja'>Kolacja</option>
+        </select>
+        <p>{errors?.meal?.message}</p>
+      </div>
+       
+      <div className='wrapper-input'>
+        <label htmlFor='email'>Zaplanuj posiłek</label>
+        <textarea
+          
+          
+          {...register('text')}
         />
-        <p>{errors.link?.message}</p>
+        <p>{errors.text?.message}</p>
       </div>
 
       <div className='wrapper-input'>
         <input
           type='submit'
-          value='+ Add new link'
+          value='🖊️ Zapisz do Menu'
         />
       </div>
     </form>

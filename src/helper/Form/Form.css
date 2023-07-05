@@ -10,16 +10,20 @@
 }
 
 .form label {
-  color: var(--darkGrey);
+  color: var(--white);
 }
-.select {
+.select, textarea{
   width: 100%;
   height: 40px;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 400;
   padding: 0 8px;
-  cursor: pointer;
+  cursor:pointer ;
+}
+textarea{
+padding: 8px;
+cursor: context-menu;
 }
 .form input {
   width: 100%;
@@ -41,12 +45,12 @@
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  background-color: var(--lightBlueviolet);
+  background-color: var(--tomato);
   margin-top: 22px;
 }
 
 .form input[type='submit']:hover {
-  background-color: var(--blueViolet);
+  background-color: var(--red);
   color: var(--white);
 }
 
@@ -60,6 +64,7 @@
 
 .form p {
   color: var(--red);
+  background-color: var(--white);
 }
 
 @media (max-width: 720px) {
