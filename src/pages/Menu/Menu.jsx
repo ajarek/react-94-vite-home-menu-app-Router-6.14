@@ -1,9 +1,9 @@
 import Meal from '../../components/Meal/Meal'
-import './Home.css'
+import './Menu.css'
 const breakfasts=['zupa mleczna','jajka z majonezem',' kanapki z serem','zupa mleczna','parówki','jajecznica','zupa mleczna']
 const lunches=['stek wieprzowy w sosie','spaghetti bolognese',' naleśniki z serem','zupa pomiod.','pulpety w sosie pomid.','grilowany filet w sosie śmiet.','panierowany filet drobiowy, frytki ']
 const dinners=['kanapki z wędliną i serem, kiełbaski','kanapki z wędliną i serem, parówki',' kanapki z serem','kanapki z wędliną i serem, białe kiełbaski ','kanapki z wędliną i serem, parówki','burgery ','kanapki z wędliną i serem, parówki']
-const Home = () => {
+const Menu = () => {
 
   return (
     <div className='home'>
@@ -27,4 +27,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Menu
