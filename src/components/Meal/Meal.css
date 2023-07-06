@@ -1,34 +1,31 @@
- .wrapper-card-meal{
+.wrapper-card-meal {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(8 ,100px);
+  grid-template-columns: repeat(8, 100px);
   gap: 10px;
   margin-top: 10px;
-  
 }
 .wrapper-card-meal .card {
   width: 100px;
   height: 120px;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   color: var(--white);
   border-radius: 2px;
   display: flex;
   align-items: start;
   justify-content: center;
   padding: 5px;
-  text-transform:capitalize ;
-  font-style:italic ;
+  text-transform: capitalize;
+  font-style: italic;
   font-family: 'Courgette', cursive;
   overflow-wrap: break-word;
   overflow: hidden;
 }
-.wrapper-card-meal .meal{
+.wrapper-card-meal .meal {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
- font-weight: 600;
- color: var(--white);
+  font-weight: 600;
+  color: var(--white);
 }
- 
- 

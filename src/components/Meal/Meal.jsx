@@ -1,6 +1,6 @@
 import './Meal.css'
 
-const Meal = ({nameMeal,arr,nameClass}) => {
+const Meal = ({ nameMeal, arr, nameClass }) => {
   return (
     <div className='wrapper-card-meal'>
       <div className='meal '>{nameMeal}</div>

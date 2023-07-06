@@ -1,13 +1,13 @@
-export const replaceElementInArray=(arr, position, newValue)=> {
+export const replaceElementInArray = (arr, position, newValue) => {
   if (position >= 0 && position < arr.length) {
     return arr.map((element, index) => {
       if (index === position) {
-        return newValue;
+        return newValue
       } else {
-        return element;
+        return element
       }
-    });
+    })
   } else {
-    return arr;
+    return arr
   }
 }

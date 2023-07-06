@@ -26,7 +26,7 @@ export const Form = ({ onSubmit }) => {
       reset({
         // dey: '',
         // meal: '',
-        text:''
+        text: '',
       })
     }
   }, [formState, reset])
@@ -52,7 +52,7 @@ export const Form = ({ onSubmit }) => {
         </select>
         <p>{errors?.dey?.message}</p>
       </div>
-       
+
       <div className='wrapper-input'>
         <label htmlFor='email'>Posiłek</label>
         <select
@@ -65,14 +65,10 @@ export const Form = ({ onSubmit }) => {
         </select>
         <p>{errors?.meal?.message}</p>
       </div>
-       
+
       <div className='wrapper-input'>
         <label htmlFor='email'>Zaplanuj posiłek</label>
-        <textarea
-          
-          
-          {...register('text')}
-        />
+        <textarea {...register('text')} />
         <p>{errors.text?.message}</p>
       </div>
 
